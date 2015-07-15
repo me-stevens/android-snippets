@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Row items format for the main activity list of shopping lists -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal" >
+
+	<!-- List Icon -->
+	<ImageView
+		android:id="@+id/listicon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:focusableInTouchMode="false"
+		android:clickable="false"
+		android:src="@drawable/icono"
+		android:contentDescription="@string/list_icon" />
+
+	<!-- Horizontal layout for the text -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+		android:paddingStart="10dp"
+		android:paddingRight="0dp"
+		android:paddingEnd="0dp"
+		android:orientation="vertical" >
+
+		<!-- List name -->
+	    <TextView 
+			android:id="@+id/listname"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:focusableInTouchMode="false"
+			android:clickable="false"
+			android:textSize="20sp"
+			android:textColor="@color/black"
+			android:text="@string/placeholder" />
+
+		<!-- List count -->
+		<TextView 
+			android:id="@+id/listcount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:focusableInTouchMode="false"
+			android:clickable="false"
+			android:textSize="12sp"
+			android:textColor="@color/black"
+			android:text="@string/placeholder" />
+	    
+	</LinearLayout>
+
+</LinearLayout>

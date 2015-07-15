@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--  Name of the shopping list -->
+    <TextView
+        android:id="@+id/listname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:text="@string/placeholder" />
+
+    <!--  Buttons -->    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/button1"
+        	android:textColor="@color/white"
+        	android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/button2"
+        	android:textColor="@color/white"
+        	android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!--  Title -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="@string/placeholder" />
+
+    <!--  Grid -->
+	<GridView
+		android:id="@+id/gridCategories"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:numColumns="3" >
+	</GridView>
+
+</LinearLayout>

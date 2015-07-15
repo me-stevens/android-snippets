@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.example.shoppinglist.MainActivity" >
+
+	<!-- Title Row -->
+    <LinearLayout
+	    android:id="@+id/row1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/green" >
+
+		<!-- Title -->
+	    <TextView
+			android:id="@+id/textView1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_margin="10dp"
+			android:padding="5dp"
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			android:fontFamily="monospace"
+			android:textStyle="bold"
+			android:text="@string/cover" />
+
+		<!-- Add List button -->
+		<Button
+			android:id="@+id/buttonAdd"
+			android:layout_width="50dp"
+			android:layout_height="30dp"
+			android:background="@color/green"
+			android:layout_margin="10dp"
+			android:padding="5dp"
+			android:text="@string/buttonAdd"
+			android:textColor="@color/white" />
+
+	</LinearLayout>
+
+	<!-- List of shopping lists -->
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<!-- Text to show if there are no lists -->
+	<TextView android:id="@+id/nolists"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:fontFamily="monospace"
+		android:textStyle="bold"
+		android:text="@string/no_lists"/>
+
+</LinearLayout>
